@@ -163,6 +163,12 @@ h2 {
     margin-top: 14px;
 }
 
+.member-card p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #363638
+}
+
 .contact {
     text-align: center;
     background-color: #f9fafb;
