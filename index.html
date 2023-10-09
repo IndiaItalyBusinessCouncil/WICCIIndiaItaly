@@ -9,6 +9,30 @@
 </head>
 <body>
 
+    <!-- Add this at the top, just below the body tag -->
+    <div class="burger-menu">
+        ☰
+    </div>
+    
+    <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="workWithUs.html">Work With Us</a>
+        <a href="media.html">Media & Event</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <script>
+        // ... existing JavaScript ...
+    
+    // New script for burger menu
+    document.querySelector(".burger-menu").addEventListener("click", function() {
+        const navMenu = document.querySelector(".nav-menu");
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
+    });
     <!-- Banner Section -->
     <section class="banner">
         <img src="images/unnamed.png" alt="India-Italy Business Council Logo" class="logo">
