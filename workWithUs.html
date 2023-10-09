@@ -114,8 +114,10 @@
 const detailsDiv = document.getElementById("internshipDetails");
 if (detailsDiv.style.display === "none") {
     detailsDiv.style.display = "block";
+    this.textContent = "Read Less";
 } else {
     detailsDiv.style.display = "none";
+    this.textContent = "Read More";
 }
 });
 
