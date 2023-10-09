@@ -13,6 +13,41 @@ body {
     padding: 0 20px;
 }
 
+/* ... existing CSS ... */
+
+/* Styles for burger menu and navigation */
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: none;  /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);  /* Semi-transparent black */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;  /* Appears below the burger icon */
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 20px;
+    display: block;
+}
+
+
 section {
     padding: 60px 0;
     background-color: #fff;
@@ -60,9 +95,39 @@ h2 {
     font-size: 1.2rem;
 }
 
+/* .wicci-overview {
+    text-align: center;
+} */
+
 .wicci-overview {
+    padding: 3rem;
+    border-radius: 50%; /* Makes the section circular */
+    width: 70%;
+    margin: 2rem auto;
+    background-color: #c4bbbb;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+}
+
+.wicci-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: center;
 }
+
+.wicci-overview p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify; 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wicci-overview strong {
+    color: #d43f00; 
+}
+
 
 .donate {
     background-color: #f9fafb;
@@ -201,13 +266,124 @@ h2 {
     text-align: center;
 }
 
+.work-with-us img {
+    margin-right: 2px;
+    width: 20px; /* You can adjust this based on your image's size */
+    height: auto; /* Keeps the image's aspect ratio */
+}
+
+/* Work With Us styles */
+#workWithUs {
+    padding: 2em 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.internship-overview h3, .internship-details h4 {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.internship-details ul {
+    margin: 1em 0;
+    list-style-type: none;
+}
+
+.internship-details ul li {
+    margin-bottom: 0.5em;
+}
+
+.centered-button {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#readMoreBtn {
+    background-color: #4C76A5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#readMoreBtn:hover {
+    background-color: #0056b3;
+}
+
+
 .contact {
     text-align: center;
     background-color: #f9fafb;
 }
 
+.contact img {
+    margin-right: 2px;
+    width: 20px; /* You can adjust this based on your image's size */
+    height: auto; /* Keeps the image's aspect ratio */
+}
+
+
 .contact a {
-    color: #4C76A5;
+    color: #074b9a;
     text-decoration: none;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #0e0979;
+    border-radius: 4px;
+}
+
+.contactUs input[type="submit"] {
+    background-color: #101d81;
+    color: white;
+    cursor: pointer;
+}
+
+.email-section img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.connect-with-us {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.connect-with-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 0.5rem; 
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
