@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with Us | India-Italy Business Council</title>
+    <link rel="stylesheet" href="css/newstyle.css"> <!-- Linking to the common CSS -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Add this at the top, just below the body tag -->
+    <div class="burger-menu">
+        ☰
+    </div>
+    
+    <div class="nav-menu">
+        <a href="index-6.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="workWithUs.html">Work With Us</a>
+        <a href="media.html">Media & Event</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <script>
+        // ... existing JavaScript ...
+    
+    // New script for burger menu
+    document.querySelector(".burger-menu").addEventListener("click", function() {
+        const navMenu = document.querySelector(".nav-menu");
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
+    });
+    
+    </script>
+    
+    <!-- ... rest of your HTML remains unchanged ... -->
+    
+    
+        <!-- Banner Section -->
+        <section class="banner">
+            <img src="images/unnamed.png" alt="India-Italy Business Council Logo" class="logo">
+            <h1>WICCI's India-Italy Business Council</h1>
+            <p>Empowering women working across this bilateral corridor, including women business leaders, professionals, entrepreneurs, and creatives, to connect, lead, and build a strong community.</p>
+        </section>
+
+<!-- Work with Us content -->
+
+<div id="workWithUsSection">
+    <!-- ... Work with Us content here ... -->
+</div>
+
+<section class="work-with-us">
+    <h2>Work With Us</h2>
+    <p>Calling all ambitious women professionals and entrepreneurs looking to make a difference in the India-Italy business landscape!<br>If you're interested in expanding your business horizons, networking opportunities, and collaborating with like-minded professionals, join us now!</p> 
+    <br>Drop a message or write to us at <a href="mailto:contact.indiaitalybc@gmail.com">
+    <img src="images/email.jpeg" alt="Email Icon" style="vertical-align: middle;">
+</a></p>
+
+<div class="internship-overview">
+    <h3>Internship Opportunity</h3>
+    <p>We're looking for passionate individuals to join us as interns. Dive deep into the India-Italy business relationship, work remotely, and make a significant impact.</p>
+    <div class="centered-button">
+        <button id="readMoreBtn">Read More</button>
+    </div>
+</div>
+
+<!-- Full Internship Details (Hidden initially) -->
+<div class="internship-details" id="internshipDetails" style="display: none;">
+    <h4>Internship Details:</h4>
+    <ul>
+        <li><strong>Location:</strong> Remote</li>
+        <li><strong>Duration:</strong> 6 months</li>
+        <li><strong>Commitment:</strong> 12-16 hours per week</li>
+        <li><strong>Application Deadline:</strong> October 30, 2023</li>
+    </ul>
+    
+    <h4>Responsibilities:</h4>
+    <ul>
+        <li>Research and compile information on women-led businesses and entrepreneurship opportunities in both India and Italy.</li>
+        <li>Assist in organizing virtual events, webinars, and networking sessions to promote collaboration among women entrepreneurs.</li>
+        <li>Support the development of content for the council's website, social media platforms, and marketing materials.</li>
+        <li>Liaise with stakeholders and members of the council to coordinate initiatives and partnership opportunities.</li>
+        <li>Help in creating mentorship and professional development programs for aspiring women leaders.</li>
+        <li>Prepare reports on the impact of women-led businesses in the bilateral trade between India and Italy.</li>
+        <!-- (Other responsibilities here) -->
+    </ul>
+    
+    <h4>Requirements:</h4>
+    <ul>
+        <li>Passionate about empowering women...</li>
+        <li>Excellent communication skills...</li>
+        <li>Passionate about empowering women in the business world and promoting gender equality.</li>
+        <li>Excellent communication skills in English (knowledge of Italian or Hindi is a plus).</li>
+        <li>Strong research and analytical abilities to gather and present relevant data.</li>
+        <li>Proficiency in Microsoft Office and social media platforms.</li>
+        <li>Self-motivated, proactive, and able to work effectively both independently and in a team.</li>
+        <li>pursuing a degree in business, law, international relations, gender studies, or a related field (undergraduate or graduate).</li>
+        <!-- (Other requirements here) -->
+    </ul>
+    
+    <h4>Perks:</h4>
+    <p>Internship certificate, networking opportunities, ...</p>
+    
+    <h4>How to Apply:</h4>
+    <p>Send your resume to <a href="mailto:contact.indiaitalybc@gmail.com">contact.indiaitalybc@gmail.com</a>.</p>
+    
+    <p><strong>Join us in making a difference...</strong> As an intern at the WICCI’s India-Italy Business Council, you'll be part of a dedicated team working towards a more inclusive and diverse business landscape.</p>
+</div>
+<script>
+    document.getElementById("readMoreBtn").addEventListener("click", function() {
+const detailsDiv = document.getElementById("internshipDetails");
+if (detailsDiv.style.display === "none") {
+    detailsDiv.style.display = "block";
+} else {
+    detailsDiv.style.display = "none";
+}
+});
+
+</script>
+</section>
+
+</body>
+</html>

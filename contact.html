@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with Us | India-Italy Business Council</title>
+    <link rel="stylesheet" href="css/newstyle.css"> <!-- Linking to the common CSS -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Add this at the top, just below the body tag -->
+    <div class="burger-menu">
+        ☰
+    </div>
+    
+    <div class="nav-menu">
+        <a href="index-6.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="workWithUs.html">Work With Us</a>
+        <a href="media.html">Media & Event</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <script>
+        // ... existing JavaScript ...
+    
+    // New script for burger menu
+    document.querySelector(".burger-menu").addEventListener("click", function() {
+        const navMenu = document.querySelector(".nav-menu");
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
+    });
+    
+    </script>
+    
+    <!-- ... rest of your HTML remains unchanged ... -->
+    
+    
+        <!-- Banner Section -->
+        <section class="banner">
+            <img src="images/unnamed.png" alt="India-Italy Business Council Logo" class="logo">
+            <h1>WICCI's India-Italy Business Council</h1>
+            <p>Empowering women working across this bilateral corridor, including women business leaders, professionals, entrepreneurs, and creatives, to connect, lead, and build a strong community.</p>
+        </section>
+
+
+<!-- Contact Section -->
+ <section class="contact">
+    <h2>Contact Us</h2>
+<p>If you wish to participate or collaborate, feel free to reach out using the form below:</p>
+
+<form action="mailto:contact.indiaitalybc@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Send">
+</form>
+
+<div class="email-section">
+    <p>Or directly email us at: 
+    <a href="mailto:contact.indiaitalybc@gmail.com">
+        <img src="images/email.jpeg" alt="Email Icon"> 
+        contact.indiaitalybc@gmail.com
+    </a>
+    </p>
+</div>
+</section>

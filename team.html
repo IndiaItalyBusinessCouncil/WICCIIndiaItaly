@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work with Us | India-Italy Business Council</title>
+    <link rel="stylesheet" href="css/newstyle.css"> <!-- Linking to the common CSS -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Add this at the top, just below the body tag -->
+    <div class="burger-menu">
+        ☰
+    </div>
+    
+    <div class="nav-menu">
+        <a href="index-6.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="workWithUs.html">Work With Us</a>
+        <a href="media.html">Media & Event</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <script>
+        // ... existing JavaScript ...
+    
+    // New script for burger menu
+    document.querySelector(".burger-menu").addEventListener("click", function() {
+        const navMenu = document.querySelector(".nav-menu");
+        if (navMenu.style.display === "none" || navMenu.style.display === "") {
+            navMenu.style.display = "flex";
+        } else {
+            navMenu.style.display = "none";
+        }
+    });
+    
+    </script>
+    
+    <!-- ... rest of your HTML remains unchanged ... -->
+    
+    
+        <!-- Banner Section -->
+        <section class="banner">
+            <img src="images/unnamed.png" alt="India-Italy Business Council Logo" class="logo">
+            <h1>WICCI's India-Italy Business Council</h1>
+            <p>Empowering women working across this bilateral corridor, including women business leaders, professionals, entrepreneurs, and creatives, to connect, lead, and build a strong community.</p>
+        </section>
+
+<!-- Meet our Council Members Section -->
+<section class="council-members">
+    <h2>Meet our Team</h2>
+    <div class="members-grid">
+        <!-- Sample member card; you can duplicate this format for each member -->
+        <div class="member-card">
+            <img src="images/Saloni.jpg" alt="Saloni Angras">
+            <h3>Saloni Angras</h3>
+            <h4>President</h4>
+        </div>
+        <!-- ... add more member cards ... -->
+        <div class="member-card">
+            <img src="images/PoojaTiwari.png" alt="Pooja Tiwari">
+            <h3>Pooja Tiwari</h3>
+            <h4>Vice President</h4>
+        </div>
+    </div>
+    <br>
+    <h2>Meet our Council Members</h2>
+    <div class="members-grid">
+        <!-- Sample member card; you can duplicate this format for each member -->
+        <div class="member-card">
+            <img src="images/Saloni.jpg" alt="Saloni Angras">
+            <h3>Saloni Angras</h3>
+            <h4>President</h4>
+            <p>Associate & Foreign Counsel at RLVT Tax Legal AFC Advisory<br>Italy</p>
+        </div>
+        <!-- ... add more member cards ... -->
+        <div class="member-card">
+            <img src="images/PoojaTiwari.png" alt="Pooja Tiwari">
+            <h3>Pooja Tiwari</h3>
+            <h4>Vice President</h4>
+        </div>
+    </div>
+</section>
